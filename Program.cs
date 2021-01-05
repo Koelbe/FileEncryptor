@@ -42,6 +42,7 @@ namespace FileEncryptor
                     Console.WriteLine("You chose ENCRYPT");
                     Console.Write("Encryption password: ");
                     string encryptionPassword = Console.ReadLine();
+                    string encryptedString = encryptStringWithPassword(encryptionPassword);//RETURNS NULL, NOT IMPLEMENTED
                 }
 
                 if (input == "decrypt")
@@ -49,9 +50,22 @@ namespace FileEncryptor
                     Console.WriteLine("You chose DECRYPT");
                     Console.Write("Decryption password: ");
                     string decryptionPassword = Console.ReadLine();
+                    string decryptedString = decryptStringWithPassword(decryptionPassword);//RETURNS NULL, NOT IMPLEMENTED
                 }
 
                 Console.ReadKey();
+            }
+
+            string encryptStringWithPassword(string password)//NEEDS FLESHED OUT
+            {
+                Console.WriteLine("DID NOT ENCRYPT FILE, CODE NEEDS IMPLEMENTED");
+                return null;
+            }
+
+            string decryptStringWithPassword(string password)//NEEDS FLESHED OUT
+            {
+                Console.WriteLine("DID NOT DECRYPT FILE, CODE NEEDS IMPLEMENTED");
+                return null;
             }
 
 
